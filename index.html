@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>卒論オンラインサロン</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" defer ></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script type="text/javascript" src="t.js"></script>
+  <style>
+    .main{
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    * {
+    margin:0; padding:0;
+    }
+    header {
+    width: 100%;
+    height: 200px;
+    padding: 5px 0;
+    text-align: center;
+    color: #a52a2a;
+    background-image: url("sampleimg2.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    }
+    header .headline{
+        line-height: 100px;
+        font-size: 30px;
+        text-decoration: underline;
+    }
+    .nav-list {
+        line-height: 100px;
+        list-style: none;
+        font-weight: bold;
+    }
+    .nav-list-item {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    }
+    footer{
+        width: 100%;
+        height: 100px;
+        background-color: #174a5c;
+        color: white;
+        text-align: center;
+    }
+    ul.footer-menu li {
+    display: inline;
+    }
+  </style>
+
+  </head>
+<body>
+    
+  <nav class="navbar has-background-info">
+    <div class="navbar-brand">
+      <p class="navbar-item has-text-white" >
+        卒論オンラインサロン
+      </p>
+    </div>
+  </nav>
+    
+  <section class="section">
+    <div class="container">
+        <div class="box main">
+            <h3 class="title">特典コードを入力</h3>
+            <form name="myform">
+                <input class="tinput input" type="text" placeholder="特典コード"><br><br>
+                <button class="button is-primary" type="submit" onclick="checkText()" >送信</button>
+            </form>
+            <script>
+                // よくデベロッパツールを使ってみようとしたな！！！　素晴らしい！！
+                
+                function checkText() {
+                    var items = ['引っかかったな！！',
+                                'あると思った？',
+                                'そんなものはない！',
+                                'hahaha、あるとおもったか？',
+                                "サロンなんかねーよ。うるせえよ。黙れよ。サロンなんかねーよ。拳こそ正義",
+                                "一 十 百 千 万 円かかる　オンラインサロンですわー！！何言わせとんねん。",
+                                "卒論のサロン、気持ち良すぎだろ！！！",
+                                "人生は卒論やー！！",
+                                "すべての卒論に感謝",
+                                "ボタンを押したのか？これでお前と縁ができたな！！",
+                                "止まるんじゃねぇぞ…",
+                                "附設の卒論、半端ないって！！",
+                                "いつやるの？今でしょ！！",
+                                "＼(・ω・＼)卒論!(／・ω・)／ピンチ!",
+                                "久留米大学のココが凄い！！様々な卒論ができるぞ！",
+                                "やっちゃいなよ！そんな卒論なんか！！",
+                                "あなたを卒論罪と卒論罪で訴えます！理由はもちろんお分かりですね？あなたが皆をこんなウラ技で騙し、卒論を破壊したからです！覚悟の準備をしておいて下さい。ちかいうちに訴えます。裁判も起こします。裁判所にも問答無用できてもらいます。慰謝料の準備もしておいて下さい！貴方は犯罪者です！卒論にぶち込まれる楽しみにしておいて下さい！いいですね！",
+                                "卒論ｩｵｩｳｱ゛ｱｱｱｱｱｱｱｱｱｱｱｱｱーーーｩｱﾝ！"
+                            ];
+
+                    var random = Math.floor( Math.random() * items.length );
+
+                    alert(items[random] );
+                    alert("卒論がんばれよ。");
+                    }
+              </script>
+        </div>
+    </div>
+  </section>
+  <br><br>
+  <br><br><br><br><br><br><br><br><br>
+  <footer>
+    　　<ul class="footer-menu">
+         <li><a href="https://twitter.com/yamada_danieru">twitter</a></li>
+        </ul>
+        <p>© sotsuron.</p>
+      </footer>
+</body>
+</html>
